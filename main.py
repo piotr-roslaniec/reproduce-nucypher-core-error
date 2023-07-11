@@ -2,7 +2,6 @@ import inspect
 
 import nucypher_core
 from nucypher_core import umbral, ferveo
-from nucypher_core.ferveo import InvalidShareNumberParameter
 
 
 for line in inspect.getsourcelines(nucypher_core)[0]:
@@ -15,5 +14,8 @@ print()
 
 for line in inspect.getsourcelines(ferveo)[0]:
     print(line)
+
+
+from nucypher_core.ferveo import InvalidShareNumberParameter
 
 print(InvalidShareNumberParameter)
